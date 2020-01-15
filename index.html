@@ -14,8 +14,9 @@
   </p>
   <script>
     function showEmojiDetails() {
-      console.log('here')
-      document.getElementById("emoji-details").innerText = document.getElementById('which-emoji-recv').value;
+      setTimeout(function(){
+        document.getElementById("emoji-details").innerText = document.getElementById('which-emoji-recv').value;
+      }, 5000);
     }
   </script>
 </body>
