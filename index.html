@@ -8,14 +8,13 @@
 </head>
 <body>
   <h1>Paste the contents of your emoji here!</h1>
-  <textarea name="which-emoji-recv" id="which-emoji-recv" onpaste="showEmojiDetails(this)"></textarea>
+  <textarea name="which-emoji-recv" id="which-emoji-recv" onpaste="showEmojiDetails()"></textarea>
   <p id="emoji-details">
 
   </p>
   <script>
-    function showEmojiDetails(e) {
-      debugger;
-      document.getElementById("emoji-details").innerHTML = e.target.innerHTML;
+    function showEmojiDetails() {
+      document.getElementById("emoji-details").innerHTML = document.getElementById('which-emoji-recv').innerHTML;
     }
   </script>
 </body>
