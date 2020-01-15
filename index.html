@@ -7,6 +7,15 @@
   <title>which-emoji</title>
 </head>
 <body>
-  <textarea name="which-emoji-recv" id="which-emoji-recv"></textarea>
+  <h1>Paste the contents of your emoji here!</h1>
+  <textarea name="which-emoji-recv" id="which-emoji-recv" onpaste="showEmojiDetails(e)"></textarea>
+  <p id="emoji-details">
+
+  </p>
+  <script>
+    function showEmojiDetails(e) {
+      document.getElementById("emoji-details").innerHTML = e.target.innerHTML;
+    }
+  </script>
 </body>
 </html>
